@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Maven Pro", sans-serif;
+}
+
+
+:root{
+
+    --bg-color: #ffffff;
+    --second-bg-color: #dcdddf;
+    --text-color: #000000;
+    --main-color: #6a6969;
+}
+
+@media (max-width: 1050px){
+   nav #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    nav .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 95px;
+        right: 30px;
+        background: var(--bg-color);
+        z-index: 10;
+    }
+    nav .menu.active{
+        display: flex;
+    }
+    nav .menu a{
+        font-size: 3rem;
+        color: var(--text-color);
+    }
+
+    .header {
+        padding: 2rem 3%;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+
+    }
+
+    .footer {
+        padding: 2rem 3% ;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-contenido h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-contenido h1 {
+        font-size: 5rem;
+    }
+
+    .home-contenido p {
+        font-size: 2rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .sobremi {
+        flex-direction: column-reverse;
+    }
+
+    .sobremi p {
+        font-size: 2rem;
+    }
+
+    .sobremi img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .sobremi #Firma {
+        display: none;
+
+    }
+
+
+    .Skills,
+    .Hobbies
+    .Formacion,
+    .Portafolio  {
+       padding: 7rem; 
+    }
+
+    .Skills h2,
+    .Hobbies h2,
+    .Formacion h2,
+    .Portafolio h2 {
+       margin-bottom: 3rem; 
+    }
+
+    .Formacion-box img {
+        width: 100%;
+    }
+
+    .Portafolio-contenedor,
+    .Formacion-contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media (max-width: 809px){
+
+   nav .menu{
+
+        right: 10px;
+    }
+
+    nav .menu a{
+        font-size: 2rem;
+        color: var(--text-color);
+        
+    } 
+    
+   .home-img img {
+        width: 90vw;
+    }
+
+    .Portafolio-contenedor,
+    .Formacion-contenedor {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer {
+        padding: 2rem 3% ;
+        flex-direction: column-reverse;
+    }
+
+    .footer p { 
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+
+
+    .Contacto form .contacto-box input {
+        width: 100%;
+    }
+
+
+}
+
+
